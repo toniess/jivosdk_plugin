@@ -1,0 +1,15 @@
+dartdoc:
+  categories:
+    Session:
+      name: Session
+    Notifications:
+      name: Notifications
+    Display:
+      name: Display
+    Debugging:
+      name: Debugging
+  categoryOrder:
+    - Session
+    - Notifications
+    - Display
+    - Debugging

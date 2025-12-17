@@ -1,0 +1,24 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.jivosite.jivosdk_plugin"
+  xmlns:tools="http://schemas.android.com/tools">
+    <application>
+        <service
+            android:name="com.jivosite.sdk.push.JivoFirebaseMessagingService"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/jivo_sdk_bg_time"
+            tools:replace="android:resource" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/darkPastelGreen"
+            tools:replace="android:resource" />
+
+    </application>
+</manifest>
