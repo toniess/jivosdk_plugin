@@ -182,6 +182,13 @@ class JVDisplay extends JVSubSystem {
         _didAppearExecutor();
     }
   }
+
+  /// Sets the theme mode for the chat UI.
+  /// [JVThemeMode.system] = follow system, [light] = force light, [dark] = force dark.
+  Future<void> setThemeMode(JVThemeMode mode) async {
+    await _channel.invokeMethod<void>(
+        'display:setThemeMode', mode.name);
+  }
 }
 
 /// Located at `Jivo.notifications`

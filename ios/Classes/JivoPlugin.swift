@@ -151,6 +151,24 @@ public class JivoPlugin: NSObject, FlutterPlugin {
             
             let locale = Locale(identifier: identifier)
             Jivo.display.setLocale(locale)
+
+        case "display:setThemeMode":
+            defer {
+                result(nil)
+            }
+
+            guard let raw = call.arguments as? String else {
+                return
+            }
+
+            switch raw {
+                case "light":
+                    Jivo.display.setTheme(.light)
+                case "dark":
+                    Jivo.display.setTheme(.dark)
+                default:
+                    Jivo.display.setTheme(.unspecified)
+            }
             
         case "display:defineText":
             defer {

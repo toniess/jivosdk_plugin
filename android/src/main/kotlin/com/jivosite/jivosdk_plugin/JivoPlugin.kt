@@ -166,6 +166,18 @@ class JivoPlugin : FlutterPlugin, ActivityAware, MethodCallHandler {
                 result.success(null)
             }
 
+            "display:setThemeMode" -> {
+                val mode = (call.arguments as String).lowercase()
+                AppCompatDelegate.setDefaultNightMode(
+                    when(mode) {
+                        "light" -> AppCompatDelegate.MODE_NIGHT_NO
+                        "dark" -> AppCompatDelegate.MODE_NIGHT_YES
+                        else -> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
+                    }
+                )
+                result.success(null)
+            }
+
             else -> result.success(null)
         }
     }

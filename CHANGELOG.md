@@ -1,3 +1,9 @@
+## 1.1.0
+
+* Added theme switching support
+* Updated SDK to version 2.8.0 for Android platform
+* Bugfixes and minor improvements
+
 ## 1.0.2
 
 * Fixed message input overlap

@@ -2,7 +2,7 @@ group 'com.jivosite.jivosdk_plugin'
 version '1.0-SNAPSHOT'
 
 buildscript {
-    ext.kotlin_version = '2.1.21'
+    ext.kotlin_version = '2.2.0'
     repositories {
         google()
         maven { url 'https://www.jitpack.io' }
@@ -74,7 +74,7 @@ dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 
     //JivoSDK
-    implementation 'com.jivosite.sdk:android-sdk:2.7.0'
+    implementation 'com.jivosite.sdk:android-sdk:2.8.0'
     //firebase
     implementation platform('com.google.firebase:firebase-bom:33.12.0')
     implementation 'com.google.firebase:firebase-messaging'
