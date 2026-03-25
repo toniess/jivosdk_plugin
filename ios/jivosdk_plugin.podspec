@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'jivosdk'
+  s.name             = 'jivosdk_plugin'
   s.version          = '0.2.0'
   s.summary          = "JivoSDK Plugin"
   s.description      = "Flutter plugin that bridges to JivoSDK"
