@@ -41,17 +41,6 @@ class JVSessionCustomDataField with JVDartdocHideObject {
     JVSessionCustomDataField(this.title, this.key, this.content, this.link);
 }
 
-/// Theme mode for the chat UI.
-/// {@category Display}
-enum JVThemeMode {
-  /// Follow system setting
-  system,
-  /// Force light
-  light,
-  /// Force dark
-  dark
-}
-
 /// UI elements available for customization
 /// {@category Display}
 enum JVDisplayElement {

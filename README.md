@@ -22,7 +22,7 @@ This repository includes a fully functional [example app](https://github.com/Jiv
 Add this dependency to your package's pubspec.yaml file.
 ```yaml
 dependencies:
- stream_chat_flutter: 1.1.0
+ stream_chat_flutter: 1.0.2
 ```
 Then you should run `flutter packages get`
 
